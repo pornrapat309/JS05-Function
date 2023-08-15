@@ -8,7 +8,7 @@ function sendTo(from, to) {
 }
 
 sendTo(sender, 'Sarah'); // *
-sendTo(null); // **
+sendTo(null); // ** from null to Undefined
 ```
 
 ```js
@@ -18,6 +18,6 @@ function sendTo(to, from = 'CC') {
     console.log(`From ${from} to ${to}`);
 }
 
-sendTo('Max'); // ***
-sendTo('Ben', 'Jay'); // ****
+sendTo('Max'); // *** from CC to Max
+sendTo('Ben', 'Jay'); // **** from Jay to Ben
 ```
